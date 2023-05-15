@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.users {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}

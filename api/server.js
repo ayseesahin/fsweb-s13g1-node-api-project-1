@@ -1,9 +1,11 @@
 // SUNUCUYU BU DOSYAYA KURUN
 const express = require("express");
+const cors = require("cors");
 const server = express();
 const { find, findById, insert, update, remove } = require("./users/model");
 
 server.use(express.json());
+server.use(cors());
 
 server.get("/", (req, res) => {
   res.send("Server is up and running...");
